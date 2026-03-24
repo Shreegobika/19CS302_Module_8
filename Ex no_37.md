@@ -12,36 +12,55 @@ Print the sum and difference of two int variable on a new line.
 
 Print the sum and difference of two float variable rounded to one decimal place on a new line.
 
-## Input Format
+## EX 31 C program to find the smallest among three numbers using Structure.
+## DATE:23/05/2025
+## AIM:
+To write a C program to find the smallest among three numbers using Structure.
 
-The first line contains two integers.
+## Algorithm
+1.Start the program and define a structure with three integer fields.
 
-The second line contains two floating point numbers.
+2.Declare a structure variable to store the three numbers.
 
-## Constraints 
+3.Read the values of the three numbers from the user.
 
-1 ≤ integer variables ≤ 104
+4.Compare the three numbers to find the smallest.
 
-1 ≤ float variables ≤ 104
+5.Display the smallest number and end the program.
 
-## Output Format
+## Program:
+```
+/* C program to find the smallest among three numbers using Structure.
 
-Print the sum and difference of both integers separated by a space on the first line, and the sum and difference of both float (scaled to 1 decimal place) separated by a space on the second line.
+*/ #include <stdio.h>
 
-Sample Input 
+struct Numbers { int num1, num2, num3; };
 
-10 4
+int main() { struct Numbers n;
 
-4.0 2.0
+printf("Enter three numbers: ");
+scanf("%d %d %d", &n.num1, &n.num2, &n.num3);
 
-Sample Output 
+int smallest = n.num1;
 
-14 6
+if(n.num2 < smallest)
+{
+    smallest = n.num2;
+}
 
-6.0 2.0
+if(n.num3 < smallest)
+{
+    smallest = n.num3;
+}
 
-Explanation
+printf("The smallest number is: %d\n", smallest);
 
-When we sum the integers 10 and 4, we get the integer 14. When we subtract the second number 4 from the first number 10, we get 6 as their difference.
+return 0;
+}
+```
 
-When we sum the floating-point numbers 4.0 and 2.0, we get 6.0. When we subtract the second number 2.0 from the first number 4.0, we get 2.0 as their difference.
+## Output:
+<img width="375" height="214" alt="image" src="https://github.com/user-attachments/assets/736f3c3a-6840-4c39-8021-e681a5f415c8" />
+
+## Result:
+Thus the program was executed and the output was verified successfully.Uploading image.png…
